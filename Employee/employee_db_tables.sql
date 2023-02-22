@@ -15,8 +15,8 @@ CREATE TABLE Employees (
 	emp_title_id VARCHAR(5), 
 	birth_date DATE NOT NULL,
 	first_name VARCHAR(20) NOT NULL,
-	last_name VARCHAR(30),
-	sex VARCHAR(1),
+	last_name VARCHAR(30) NOT NULL,
+	sex VARCHAR(1) NOT NULL,
 	hire_date DATE NOT NULL,
 	CONSTRAINT fk_emp_title FOREIGN KEY (emp_title_id) REFERENCES Titles(title_id)
 );
